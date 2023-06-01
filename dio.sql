@@ -19,4 +19,10 @@ DELETE FROM pessoas WHERE nome = 'Pedrinho Maluquino';
 
 SELECT * FROM pessoas;
 
+SELECT * FROM `pessoa` ORDER BY nome ASC;
+SELECT * FROM `pessoa` ORDER BY id DESC;
+SELECT * FROM `pessoa` ORDER BY nome DESC;
+
+
+
 
