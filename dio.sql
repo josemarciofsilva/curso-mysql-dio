@@ -19,9 +19,15 @@ DELETE FROM pessoas WHERE nome = 'Pedrinho Maluquino';
 
 SELECT * FROM pessoas;
 
-SELECT * FROM `pessoa` ORDER BY nome ASC;
-SELECT * FROM `pessoa` ORDER BY id DESC;
-SELECT * FROM `pessoa` ORDER BY nome DESC;
+SELECT * FROM pessoas ORDER BY nome ASC;
+SELECT * FROM pessoas ORDER BY id DESC;
+SELECT * FROM pessoas ORDER BY nome DESC;
+
+
+ALTER TABLE pessoas ADD genero VARCHAR(1) NOT NULL AFTER nascimento;
+update pessoas SET genero = 'M' where id = 1;
+update pessoas SET genero = 'F' where id = 2;
+update pessoas SET genero = 'F' where id = 3;
 
 
 
